@@ -5,6 +5,7 @@
 
 ### Setup MySQL Schemas
 
+```
 CREATE TABLE `Users` (
   `user_id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL,
@@ -16,7 +17,9 @@ CREATE TABLE `Users` (
   UNIQUE KEY `username` (`username`),
   UNIQUE KEY `email` (`email`)
 );
+```
 
+```
 
 CREATE TABLE `Books` (
   `book_id` int NOT NULL AUTO_INCREMENT,
@@ -32,6 +35,7 @@ CREATE TABLE `Books` (
   KEY `user_id` (`user_id`),
   CONSTRAINT `books_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users` (`user_id`)
 );
+```
 
 ### Run instructions for sending data to SigNoz
 
