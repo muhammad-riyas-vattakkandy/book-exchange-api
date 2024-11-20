@@ -37,7 +37,7 @@ CREATE TABLE `Books` (
 );
 ```
 
-### Run instructions for sending data to SigNoz
+### Run instructions
 
 - Create a virtual environment and activate it
 
